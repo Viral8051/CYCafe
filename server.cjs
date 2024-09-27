@@ -5,9 +5,9 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors'); // Import CORS
 const app = express();
-const port = 3001; // Change to 3001
+const port = process.env.PORT || 3001;
 
-app.use(cors()); 
+app.use(cors(https://cy-cafe.vercel.app)); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 });
 
 // Route to handle form submission
-app.post('/contact-send-email', (req, res) => {
+app.post('https://cy-cafe.vercel.app/contactus', (req, res) => {
   const { name, email, subject, message } = req.body;
 
   // Date and Time of submission
