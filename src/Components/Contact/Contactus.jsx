@@ -25,7 +25,7 @@ function Contactus() {
     // You can handle API calls here if needed in the future
 
     // Send data to the backend
-    fetch('https://cy-cafe.vercel.app/', {
+    fetch('https://cy-cafe.vercel.app/contactus', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
