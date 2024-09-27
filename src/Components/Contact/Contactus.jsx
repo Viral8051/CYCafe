@@ -25,7 +25,7 @@ function Contactus() {
     // You can handle API calls here if needed in the future
 
     // Send data to the backend
-    fetch('http://127.0.0.1:3001/send-email', {
+    fetch('https://cy-cafe.vercel.app/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
