@@ -26,7 +26,7 @@ function BookaTable() {
     // You can handle API calls here if needed in the future
 
     // Send data to the backend
-    fetch('http://127.0.0.1:3001/send-email', {
+    fetch('http://127.0.0.1:3001/book-send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
