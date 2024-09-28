@@ -5,9 +5,9 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors'); // Import CORS
 const app = express();
-const port = process.env.PORT || 3001;
+const port = 3001; // Change to 3001
 
-app.use(cors(https://cy-cafe.vercel.app)); 
+app.use(cors()); 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -16,8 +16,8 @@ app.get('/', (req, res) => {
 });
 
 // Route to handle form submission
-app.post('https://cy-cafe.vercel.app/contactus', (req, res) => {
-  const { name, email, subject, message } = req.body;
+app.post('/contact-send-email', (req, res) => {
+  const { name, email, subject, message} = req.body;
 
   // Date and Time of submission
   const currentDate = new Date().toLocaleString();
@@ -45,8 +45,54 @@ app.post('https://cy-cafe.vercel.app/contactus', (req, res) => {
     `,
   };
 
+  
   // Send email
   transporter.sendMail(contactmailOptions, (error, info) => {
+    if (error) {
+      return res.status(500).send({ message: 'Error sending email', error });
+      
+    }
+    res.status(200).send({ message: 'Email sent successfully!' });
+  });
+});
+
+// Route to handle form submission
+app.post('/book-send-email', (req, res) => {
+  const { name, email, subject, message, phone, date, time, people} = req.body;
+
+  // Date and Time of submission
+  const currentDate = new Date().toLocaleString();
+
+  // Nodemailer Transporter
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',  // Use your email service here (Gmail, Yahoo, etc.)
+    auth: {
+      user: process.env.EMAIL_USER,  // Your email address from .env
+      pass: process.env.EMAIL_PASS,   // Your app password from .env
+    },
+  });
+
+  // Email Template
+const bookmailOptions = {
+  from: email,  // Sender's email address
+  to: 'ridzzvir@gmail.com',  // Recipient's email address
+  subject: `Message from ${name}: ${subject}`,
+  html: `
+    <h3>You have a new Booking form submission!</h3>
+    <p><strong>Name:</strong> ${name}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone Number:</strong> ${phone}</p>
+    <p><strong>Booking date:</strong> ${date}</p>
+    <p><strong>Booking time:</strong> ${time}</p>
+    <p><strong>Number of People:</strong> ${people}</p>
+    <p><strong>Message:</strong> ${message}</p>
+    <p><strong>Date Submitted:</strong> ${currentDate}</p>
+  `,
+};
+
+  
+  // Send email
+  transporter.sendMail(bookmailOptions, (error, info) => {
     if (error) {
       return res.status(500).send({ message: 'Error sending email', error });
       
