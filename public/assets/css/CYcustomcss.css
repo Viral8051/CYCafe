@@ -43,6 +43,7 @@
 .header .logo img {
     max-height: 100px;
     margin-right: 3px;
+    transform: rotate(180deg);
 }
 .btn-getstarted a {
     color: #fff;
@@ -99,6 +100,35 @@
     color: var(--contrast-color);
     background: color-mix(in srgb, var(--accent-color), transparent 15%);
 }
+p.hero-pop-Content1 {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+p.hero-pop-Content2 {
+    color: #fff;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+.popup {
+        position: relative;
+        display: flex;
+        justify-content: center;
+}
+
+.word {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
 /* contact us */
 
 .contact .php-email-form input[type=text], .contact .php-email-form input[type=email], .contact .php-email-form textarea {
