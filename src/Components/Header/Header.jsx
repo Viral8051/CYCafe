@@ -38,7 +38,7 @@ function Header() {
             <img className='headerLogo w-8'src="Images/Header/final-mandala-half.png" alt="" />
         
         <h1 class="sitename">CY Cafe</h1>
-        <span>.</span>
+        
       </NavLink>
 
       <nav id="navmenu" class="navmenu">
