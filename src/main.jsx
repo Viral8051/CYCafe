@@ -11,6 +11,7 @@ import Contactus from './Components/Contact/Contactus.jsx'
 import BookaTable from './Components/Booktable/BookaTable.jsx'
 import { Navigate } from 'react-router-dom';
 import { useEffect } from 'react'
+import Gallary from './Components/Gallary/Gallary.jsx'
 
 const router =  createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router =  createBrowserRouter(
       <Route path='menu' element={<Menu/>}></Route>
       <Route path='contactus' element={<Contactus/>}></Route>
       <Route path='bookatable' element={<BookaTable/>}></Route>
+      <Route path='gallary' element={<Gallary/>}></Route>
       <Route path='*' element={<Navigate to="/" />}> </Route>
 
     </Route>

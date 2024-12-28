@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import "react-phone-input-2/lib/style.css";
 
 function BookaTable() {
   const [BookFormData, setBookFormData] = useState({
@@ -26,7 +27,7 @@ function BookaTable() {
     // You can handle API calls here if needed in the future
 
     // Send data to the backend
-    fetch('http://127.0.0.1:3001/send-email', {
+    fetch('http://127.0.0.1:3001/book-send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -61,7 +62,7 @@ function BookaTable() {
 
     <div class="col-lg-4 reservation-img bg-[url('Images/FoodImages/20240329_164923.jpg')]" ></div>
 
-    <div class="col-lg-8 d-flex align-items-center reservation-form-bg bgShad"  data-aos-delay="200">
+    {/* <div class="col-lg-8 d-flex align-items-center reservation-form-bg bgShad"  data-aos-delay="200">
       <form onSubmit={BookHandleSubmit} class="php-email-form">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6">
@@ -156,6 +157,9 @@ function BookaTable() {
           <button type="submit">Book a Table</button>
         </div>
       </form>
+    </div> */}
+    <div className=" col-lg-8 d-flex align-items-center bookCall bgShad">
+      <p className='bookDesc'>For Booking please Call us On  <span><a href='tel:+447555 331331'>+447555 331331</a></span></p>
     </div>
 
   </div>

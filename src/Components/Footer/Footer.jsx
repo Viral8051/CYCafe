@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-        <footer id="footer" class="footer dark-background">
+    <footer id="footer" class="footer dark-background">
 
     <div class="container">
       <div class="row footer-inner gy-3">
@@ -23,7 +23,7 @@ function Footer() {
           <div>
             <h4>Contact</h4>
             <p>
-              <strong>Phone:</strong> <span>+447555 331331</span><br/>
+              <strong>Phone:</strong> <span><a className="footertel" href='tel:+447555 331331'>+447555 331331</a></span><br/>
               <strong>Email:</strong> <span>cycafe.uk@gmail.com</span><br/>
             </p>
           </div>
@@ -34,8 +34,8 @@ function Footer() {
           <div>
             <h4>Opening Hours</h4>
             <p>
-              <strong>Mon-Sun:</strong> <span>09:00 AM - 08:00 PM</span><br/>
-              <strong>Sunday</strong>: <span>Closed</span>
+              <strong>Mon-Sun:</strong> <span>05:00 AM - 12:00 am</span><br/>
+              <strong>Tuesday</strong>: <span>Closed</span>
             </p>
           </div>
         </div>
@@ -44,9 +44,11 @@ function Footer() {
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
             {/* <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> */}
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            {/* <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> */}
+            <a href="https://www.instagram.com/cycafe_/" class="instagram"><i class="bi bi-instagram"></i></a>
+            {/* <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> */}
+            <a href='https://g.co/kgs/4ToZEip' className='google'><i className='bi bi-google'></i></a>
+            {/* <a href='https://www.tripadvisor.co.uk/Restaurant_Review-g26655980-d27976140-Reviews-Cy_Cafe-Leicester_Forest_East_Leicester_Leicestershire_England.html?m=19905' className='tripAdvisor'><i className='bi bi-tripadvisor'></i></a> */}
           </div>
         </div>
 

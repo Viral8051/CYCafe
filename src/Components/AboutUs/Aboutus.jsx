@@ -13,15 +13,15 @@ function Aboutus() {
 
             <div class="row gy-4">
                 <div class="about1 col-lg-7"  data-aos-delay="100">
-                <img src="assets/img/about.jpg" class="img-fluid mb-4" alt=""/>
+                <img src="../Images/gallaryImages/g2.jpeg" class="img-fluid mb-4" alt=""/>
                 <div class="book-a-table bg-white">
                     <h3>Book a Table</h3>
-                    <p>+1 5589 55488 55</p>
+                    <p>+447555 331331</p>
                 </div>
                 </div>
                 <div class="about2 col-lg-5"  data-aos-delay="250">
                 <div class="content ps-0 ps-lg-5 bgShad">
-                    <p class="fst-italic">
+                    {/* <p class="fst-italic">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua.
                     </p>
@@ -35,10 +35,11 @@ function Aboutus() {
                     velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
                     </p>
 
-                    {/* <div class="position-relative mt-4">
+                    <div class="position-relative mt-4">
                     <img src="assets/img/about-2.jpg" class="img-fluid" alt=""/>
                     <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox pulsating-play-btn"></a>
                     </div> */}
+                    Coming Soon....
                 </div>
                 </div>
             </div>

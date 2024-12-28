@@ -38,13 +38,14 @@ function Header() {
             <img className='headerLogo w-8'src="Images/Header/final-mandala-half.png" alt="" />
         
         <h1 class="sitename">CY Cafe</h1>
-        <span>.</span>
+        
       </NavLink>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><NavLink to="/" class="active">Home</NavLink></li>
           <li><NavLink to="/aboutus">About</NavLink></li>
+          <li><NavLink to="/gallary">Gallary</NavLink></li>
           <li><NavLink to="/menu">Menu</NavLink></li>
           {/* <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
