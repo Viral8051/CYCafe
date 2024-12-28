@@ -252,6 +252,9 @@ p.hero-pop-Content2 {
 .bookDesc span{
     color: #014763;
 }
+p.bookDesc a {
+    color: #014763;
+}
 
 .bookDesc a:hover{
     color: #014763;
@@ -321,7 +324,32 @@ button.closeButton {
 .footertel:hover{
     color: #014763;
 }
+.social-links {
+    display: flex;
+}
 
+.footer {
+    padding: 40px 0 15px;    
+}
+
+@media screen and (max-width: 1024px ){
+    .MenuSlider.night img {
+        width: 70%;
+    }
+
+    p.morningMenuDesc {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 38px;
+        font-weight: 600;
+    }
+    p.nightMenuDesc {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 38px;
+        font-weight: 600;
+    }
+}
 @media screen and (max-width: 991px ){
     .hero .animated {
         margin: 0 auto;
@@ -357,10 +385,43 @@ button.closeButton {
         font-size: 18px;
         
     }
+    .section-title p {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .container.section-title.bgShad {
+        padding: 0 0 10px 0;
+    }
+    section, .section {
+        padding: 60px 0 30px;
+    }
+    .bookDesc {
+        font-size: 18px;
+    }
+    .footer h4 {
+        text-align: left;
+    }
+    .footer .address p {
+        text-align: left;
+    }
+    .footer p {
+        text-align: left;
+    }
+    .footer .d-flex {
+        justify-content: left;
+        padding-left: 10%;
+    }
+    .social-links.d-flex {
+        justify-content: left;
+    }
+    .footer .copyright p {
+        text-align: center;
+    }
+    
 }
 @media screen and (max-width: 480px ){
     .img-fluid {
-        width: 12rem !important;
+        width: 15rem !important;
     }
 
     .header .logo h1 {
@@ -394,6 +455,41 @@ button.closeButton {
     }
     .header .logo img {
         width: 24px;
+    }
+
+    .section-title p {
+        font-size: 22px;
+        width: 100%;
+    }
+    .section-title {
+        padding-bottom: 10px;
+    }
+    .about1 .img-fluid {
+        width: 100% !important;
+        padding: 0 15px;
+    }
+    .book-a-table.bg-white {
+        margin: 0 15px;
+    }
+    .about .book-a-table h3 {
+        font-size: 20px;
+    }
+    .about .book-a-table h3 {
+        font-size: 20px;
+    }
+    .MenuSlider.night img {
+        width: 100%;
+    }
+
+    .contact .info-item .icon {
+        width: 40px;
+        height: 40px;
+    }
+    .contact .info-item h3 {
+        font-size: 16px;
+    }
+    .navmenu a, .navmenu a:focus {
+        font-size: 14px;
     }
 }
 

@@ -40,15 +40,18 @@ function Footer() {
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6 d-flex ">
+          <i class="bi bi-hand-thumbs-up-fill icon"></i>
+          <div>
           <h4>Follow Us</h4>
-          <div class="social-links d-flex">
+          <div class="social-links">
             {/* <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> */}
             {/* <a href="#" class="facebook"><i class="bi bi-facebook"></i></a> */}
             <a href="https://www.instagram.com/cycafe_/" class="instagram"><i class="bi bi-instagram"></i></a>
             {/* <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> */}
             <a href='https://g.co/kgs/4ToZEip' className='google'><i className='bi bi-google'></i></a>
             {/* <a href='https://www.tripadvisor.co.uk/Restaurant_Review-g26655980-d27976140-Reviews-Cy_Cafe-Leicester_Forest_East_Leicester_Leicestershire_England.html?m=19905' className='tripAdvisor'><i className='bi bi-tripadvisor'></i></a> */}
+          </div>
           </div>
         </div>
 

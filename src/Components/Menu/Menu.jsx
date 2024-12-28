@@ -11,7 +11,7 @@ function Menu() {
     const checkTime = () => {
       const now = new Date();
       const hours = now.getHours(); // Get the current hour (0-23)
-      if (hours >= 10 && hours < 20) {
+      if (hours >= 5 && hours < 9) {
         setShowMorPopup(true);
       }
     };
@@ -175,7 +175,7 @@ function Menu() {
     <div className="morningMenu bgShad section-title ">
       <p className='morningMenuDesc'>Wait there... Need something in <span>Early Morning</span>! Here is the morning menu</p>
     </div>
-    <div className='MenuSlioder mrning'>
+    <div className='MenuSlider mrning'>
     <Slider {...settings2}>
       <div>
         <img className='' src="Images/MenuImages/MorningMenu0.jpeg" alt="" />
