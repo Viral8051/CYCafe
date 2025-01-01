@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight,faTimes  } from '@fortawesome/free-solid-svg-icons';
 
-function Menu() {
+function ThreedSlider() {
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedMedia, setSelectedMedia] = useState({ src: null, type: null });
@@ -199,4 +199,4 @@ function Menu() {
   )
 }
 
-export default Menu
+export default ThreedSlider

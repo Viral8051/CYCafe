@@ -187,7 +187,7 @@ function Menu() {
     </div>
     {/* Night menu */}
     <div className="nightMenu bgShad section-title ">
-      <p className='nightMenuDesc'>Wait there... Need something in <span>Late Night</span>! Here is the morning menu</p>
+      <p className='nightMenuDesc'>Wait there... Need something in <span>Late Night</span>! Here is the Night menu</p>
     </div>
     <div className='MenuSlider night'>
     <Slider {...settings3}>

@@ -268,7 +268,10 @@ p.bookDesc a {
     height: 250px;
     position: relative;
 }
-
+.chrisSlider .gallaryCard {
+    width: 400px;
+    height: 200px;
+}
 /* .GallarySlider img{
     margin: 0 auto;
 } */

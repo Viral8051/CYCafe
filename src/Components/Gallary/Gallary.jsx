@@ -1,5 +1,6 @@
 import React from 'react'
-import ThreedSlider from './threedSlider'
+import ThreedSlider from './ThreedSlider'
+import ChrisSlider from './chrisSlider'
 
 
 function Gallary() {
@@ -13,6 +14,12 @@ function Gallary() {
     </div>
     <div className="gallarySlider">
       <ThreedSlider/>
+    </div>
+    <div class="container section-title bgShad" >
+      <p><span>Take a tour to our Christmas celebrations</span></p>
+    </div>
+    <div className="chrisSlider">
+    <ChrisSlider/>
     </div>
     </section>
     </>

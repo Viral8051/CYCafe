@@ -16,7 +16,7 @@ import Gallary from './Components/Gallary/Gallary.jsx'
 const router =  createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
-      <Route path='' element={<Hero/>}></Route>
+      <Route index element={<Hero/>}></Route>
       <Route path='aboutus' element={<Aboutus/>}></Route>
       <Route path='menu' element={<Menu/>}></Route>
       <Route path='contactus' element={<Contactus/>}></Route>
@@ -28,18 +28,18 @@ const router =  createBrowserRouter(
   )
 )
 
-const RedirectToHome = () => {
-  useEffect(() => {
-    if (window.location.pathname !== '/') {
-      window.location.replace('/');
-    }
-  }, []);
+// const RedirectToHome = () => {
+//   useEffect(() => {
+//     if (window.location.pathname !== '/') {
+//       window.location.replace('/');
+//     }
+//   }, []);
 
-  return null; // Nothing is rendered
-};
+//   return null; // Nothing is rendered
+// };
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
-    <RedirectToHome />
+    {/* <RedirectToHome />     */}
   </StrictMode>,
 )
